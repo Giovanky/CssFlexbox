@@ -1,0 +1,44 @@
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+/*hack para floats, hacer un div, y en su clase agregar clear: both;*/
+html,body{
+    width: 100%;
+    height: 100%;
+}
+html{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    flex-basis: 100%;
+}
+.contenedor{
+    width: 500px;
+    min-height: 100px;
+    background-color: #d3d3d3;
+    padding: 20px;
+    text-align: center;
+    font-family: sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contenido{
+    background-color: white;
+    width: 70%;
+    min-height: 500px;
+    border: 1px solid gray;
+    flex-grow: 1;
+}
+.lateral{
+    background-color: darkgray;
+    width:25%;
+    min-height: 500px;
+    flex-grow: 0.5;
+    margin-left: 20px;
+}
+
